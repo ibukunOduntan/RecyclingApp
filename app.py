@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # Model path
 model_path = os.path.join('model', 'best.pt')
-yolov5_path = 'C:/Users/ibuku/Downloads/SEGUN-PROJECT/CODE/yolov5'
+yolov5_path = 'yolov5'
 
 # Temporary fix for PosixPath issue in Windows
 pathlib.PosixPath = pathlib.WindowsPath
@@ -62,4 +62,4 @@ def about():
     return render_template('about.html')
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port= 8000)
