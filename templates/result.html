@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Results{% endblock %}
+
+{% block content %}
+<section class="results-section">
+    <div class="results-content">
+        <h2>Detected Waste Materials</h2>
+        <div class="image-container">
+            <img src="data:image/jpeg;base64,{{ img_data }}" alt="Processed Image with Bounding Boxes">
+        </div>
+        {% if labels %}
+            <ul class="results-list">
+            {% for label in labels %}
+                <li><a href="{{ url_for('recycle', material=label) }}">{{ label }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No waste materials detected in the image.</p>
+        {% endif %}
+        <a class="btn" href="{{ url_for('index') }}">Back to home</a>
+    </div>
+</section>
+{% endblock %}

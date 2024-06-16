@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>About - Smart Recycling</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="{{ url_for('index') }}" class="home-link">Smart Recycling</a></h1>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Smart Recycling</h2>
+                <p>Smart Recycling is a comprehensive platform dedicated to promoting sustainable waste management practices. Our app aims to educate individuals and communities about the importance of recycling and provide practical tools to make recycling easier and more efficient.</p>
+
+                <div class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to reduce waste, conserve natural resources, and promote environmental sustainability through effective recycling practices. We believe that everyone can make a difference, and our app is designed to empower users to take action towards a cleaner and greener planet.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Recycling Guides:</strong> Comprehensive information on how to recycle various materials, including plastic, glass, metal, and cardboard.</li>
+                        <li><strong>Waste Management Tips:</strong> Practical tips and best practices for reducing, reusing, and recycling waste at home and in the community.</li>
+                        <li><strong>Environmental Impact:</strong> Learn about the environmental benefits of recycling and how your efforts contribute to a sustainable future.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Why Recycling Matters</h3>
+                    <p>Recycling is crucial for protecting our environment and conserving natural resources. By recycling, we can:</p>
+                    <ul>
+                        <li>Reduce the amount of waste sent to landfills and incinerators.</li>
+                        <li>Conserve natural resources such as timber, water, and minerals.</li>
+                        <li>Prevent pollution by reducing the need to collect new raw materials.</li>
+                        <li>Save energy and reduce greenhouse gas emissions that contribute to climate change.</li>
+                        <li>Support economic growth by creating jobs in the recycling and manufacturing industries.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Join Us</h3>
+                    <p>We invite you to join us in our mission to promote recycling and environmental sustainability. Together, we can make a positive impact on our planet and create a healthier, cleaner, and more sustainable future for generations to come.</p>
+                    <p>Use the Smart Recycling app today and start making a difference!</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions, feedback, or suggestions, we'd love to hear from you! Feel free to reach out to us at <a href="mailto:info@smartrecyclingapp.com">info@smartrecyclingapp.com</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart Recycling App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

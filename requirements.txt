@@ -1,0 +1,6 @@
+Flask
+torch
+Pillow
+numpy
+opencv-python
+base64
