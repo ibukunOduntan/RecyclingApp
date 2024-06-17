@@ -1,7 +1,7 @@
 Flask
 torch
 Pillow
-numpy
+numpy==1.26.0
 opencv-python
 gunicorn
 
