@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
 import torch
-import pathlib
 from PIL import Image
 import numpy as np
 import cv2
@@ -14,9 +13,6 @@ app = Flask(__name__)
 # Model path
 model_path = os.path.join('model', 'best.pt')
 yolov5_path = 'yolov5'
-
-# Temporary fix for PosixPath issue in Windows
-pathlib.PosixPath = pathlib.WindowsPath
 
 # Load the model
 model = load_model(model_path, yolov5_path)
